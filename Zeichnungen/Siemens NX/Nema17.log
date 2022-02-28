@@ -1,0 +1,255 @@
+﻿STEP to UG
+! INFO-     NX STEP AP214 - V12.0
+! INFO-      
+! INFO-     Start of Translation: 25-FEB-2022  2:26:07 PM
+! INFO-      
+! STATUS-   Converting Part: H:\Joerg\Studium\VIM2\Hausarbeit\Zeichnungen\Siemens NX\Nema17.stp
+! SUMMARY-   
+! SUMMARY-    STEP Header Information
+! SUMMARY-   
+! SUMMARY-  Description      CATIA V5 STEP Exchange
+! SUMMARY-  Imp_Level        2;1
+! SUMMARY-  File_Name        C:\Users\lucifer\Desktop\Nema17.stp
+! SUMMARY-  Date             2021-09-02T06:03:32+00:00
+! SUMMARY-  Author           none
+! SUMMARY-  Organization     none
+! SUMMARY-  Pre_Version      CATIA Version 5-6 Release 2018 SP6
+! SUMMARY-  Orig_System      CATIA V5 STEP AP203
+! SUMMARY-  Authorization    none
+! SUMMARY-  Schema_ID        ap203_configuration_controlled_3d_design_of_mechanical_parts_and_assemblies_mim_lf
+! SUMMARY-   
+! SUMMARY-    Summary of STEP Entities
+! SUMMARY-   
+! SUMMARY-  Entity Type                                                   Count
+! SUMMARY-  -----------                                                   ------
+! SUMMARY-  advanced_face ..............................................:    439
+! SUMMARY-  application_context ........................................:      1
+! SUMMARY-  approval ...................................................:      1
+! SUMMARY-  approval_status ............................................:      1
+! SUMMARY-  axis2_placement_3d .........................................:    677
+! SUMMARY-  b_spline_curve_with_knots ..................................:    143
+! SUMMARY-  calendar_date ..............................................:      1
+! SUMMARY-  cartesian_point ............................................:   3102
+! SUMMARY-  circle .....................................................:    405
+! SUMMARY-  closed_shell ...............................................:     11
+! SUMMARY-  conical_surface ............................................:     22
+! SUMMARY-  coordinated_universal_time_offset ..........................:      1
+! SUMMARY-  cylindrical_surface ........................................:     92
+! SUMMARY-  date_and_time ..............................................:      1
+! SUMMARY-  design_context .............................................:      1
+! SUMMARY-  direction ..................................................:   1415
+! SUMMARY-  edge_curve .................................................:   1016
+! SUMMARY-  edge_loop ..................................................:    494
+! SUMMARY-  face_bound .................................................:     55
+! SUMMARY-  face_outer_bound ...........................................:    439
+! SUMMARY-  geometric_representation_context_and_global_uncertainty_a ..:      1
+! SUMMARY-  length_unit_and_si_unit ....................................:      1
+! SUMMARY-  line .......................................................:    468
+! SUMMARY-  local_time .................................................:      1
+! SUMMARY-  manifold_solid_brep ........................................:     11
+! SUMMARY-  mechanical_context .........................................:      1
+! SUMMARY-  organization ...............................................:      1
+! SUMMARY-  oriented_edge ..............................................:   2032
+! SUMMARY-  person .....................................................:      1
+! SUMMARY-  person_and_organization ....................................:      1
+! SUMMARY-  plane ......................................................:    105
+! SUMMARY-  plane_angle_unit_and_si_unit ...............................:      1
+! SUMMARY-  product ....................................................:      1
+! SUMMARY-  product_category ...........................................:      1
+! SUMMARY-  product_definition .........................................:      1
+! SUMMARY-  product_definition_formation_with_specified_source .........:      1
+! SUMMARY-  product_definition_shape ...................................:      1
+! SUMMARY-  product_related_product_category ...........................:      1
+! SUMMARY-  si_unit_and_solid_angle_unit ...............................:      1
+! SUMMARY-  toroidal_surface ...........................................:     52
+! SUMMARY-  uncertainty_measure_with_unit ..............................:      1
+! SUMMARY-  vector .....................................................:    468
+! SUMMARY-  vertex_point ...............................................:    620
+! SUMMARY-                                                               -------
+! SUMMARY-  Total                                                          12089
+! STATUS-    
+! STATUS-   Converting to Output Form (Phase 2 of 3): 25-FEB-2022 2:26:09 PM
+! STATUS-    
+! STATUS-    
+! STATUS-   Generating UG geometry and placing them in parts
+! STATUS-    
+! STATUS-   Creating the UG part (Phase 3 of 3): 25-FEB-2022  2:26:09 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 1985
+! STATUS-    
+! STATUS-   removing any duplicate geometry
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-   removing any unnecessary topology
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 2939
+! STATUS-    
+! STATUS-   removing any duplicate geometry
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-   removing any unnecessary topology
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 3843
+! STATUS-    
+! STATUS-   removing any duplicate geometry
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-   removing any unnecessary topology
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 6038
+! STATUS-    
+! STATUS-   removing any duplicate geometry
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-   removing any unnecessary topology
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 6273
+! STATUS-    
+! STATUS-   removing any duplicate geometry
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-   removing any unnecessary topology
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 7085
+! STATUS-    
+! STATUS-   removing any duplicate geometry
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-   removing any unnecessary topology
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 7897
+! STATUS-    
+! STATUS-   removing any duplicate geometry
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-   removing any unnecessary topology
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 8950
+! STATUS-    
+! STATUS-   removing any duplicate geometry
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-   removing any unnecessary topology
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 10003
+! STATUS-    
+! STATUS-   removing any duplicate geometry
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-   removing any unnecessary topology
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 11062
+! STATUS-    
+! STATUS-   removing any duplicate geometry
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-   removing any unnecessary topology
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 12115
+! STATUS-    
+! STATUS-   removing any duplicate geometry
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-   removing any unnecessary topology
+! STATUS-    
+! INFO-     Filing Part ..: H:\Joerg\Studium\VIM2\Hausarbeit\Zeichnungen\Siemens NX\Nema17.prt
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Solid .......................:    11
+! SUMMARY-                                 -----
+! SUMMARY-  Total                             11
+! INFO-      
+! INFO-     Total number of solids input for this translation       :        11
+! INFO-      
+! INFO-     Number of solids created without body validation faults :        11
+! INFO-      
+! INFO-     Number of solids created with body validation fault(s)  :         0
+! INFO-      
+! INFO-     Number of solids ending up as sheet bodies              :         0
+! INFO-      
+! INFO-     End of Translation: 25-FEB-2022  2:26:15 PM
+! INFO-      
