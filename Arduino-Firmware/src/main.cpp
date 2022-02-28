@@ -1,6 +1,6 @@
 
 #define IS_WITHOUT_HARDWARE  
-#define DATA_FORMAT          0
+#define DATA_FORMAT          1
 
 #define DRV8825_DIR_PIN     13
 #define DRV8825_ENA_PIN      8
@@ -16,15 +16,15 @@
 #define ENCODER_A_PIN       18
 #define ENCODER_B_PIN       19
 
-#define DEBUGGING_PORT Serial   // Serial port to use for RS485 communication, change to the port you're using.
+#define DEBUGGING_PORT Serial    // Serial port to use for RS485 communication, change to the port you're using.
 #define STREAMING_PORT Serial2   // Serial port to use for RS485 communication, change to the port you're using.
 #define MODBUS_PORT    Serial3   // Serial port to use for RS485 communication, change to the port you're using.
 
-#define SLAVE_ID                1              // The Modbus slave ID
+#define SLAVE_ID                1                  // The Modbus slave ID
 
-#define MODBUS_BAUDRATE      9600              // modbus baudrate
-#define STREAMING_BAUDRATE 500000              // streaming baudrate
-#define DEBUGGING_BAUDRATE 115200              // debugging baudrate
+#define MODBUS_BAUDRATE      9600                  // modbus baudrate
+#define STREAMING_BAUDRATE 500000                  // streaming baudrate
+#define DEBUGGING_BAUDRATE 115200                  // debugging baudrate
 
 #define MB_COIL_STEPPER_DIR_CCW             1      // stepper direction 0=CW; 1=CCW 
 #define MB_COIL_STEPPER_ENA                 2      // Enables the stepper
@@ -289,6 +289,10 @@ void setup() {
   Timer3.attachInterrupt( cbWriteMessurementData );
   Timer3.stop();
 
+  // every 1ms
+  Timer4.initialize(1000);
+  Timer4.attachInterrupt(cbMsTick);
+
   DEBUGGING_PORT.println("INIT DONE");
 }
 
@@ -443,6 +447,7 @@ void cbWriteMessurementData(){
 
   digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
 
+  // only print some numbers ....
   DEBUGGING_PORT.print( gHolding[15]++ );
   DEBUGGING_PORT.println( " ################" );
 
@@ -466,8 +471,8 @@ void cbWriteMessurementData(){
     STREAMING_PORT.print( ";" );
     STREAMING_PORT.print( gCurrentEncoderValue );
     STREAMING_PORT.print( "\n" );
-  #else
-#else
+  #endif
+#else if DATA_FORMAT==1
   #ifdef IS_WITHOUT_HARDWARE
     STREAMING_PORT.write( gStartTime );
     STREAMING_PORT.write( sin(gRadTimeStamp) );
@@ -480,7 +485,7 @@ void cbWriteMessurementData(){
     STREAMING_PORT.print( gCurrentEncoderPostition );
     STREAMING_PORT.print( gCurrentEncoderValue );
     STREAMING_PORT.print( '\0');
-  #else
+  #endif
 #endif
 }
 
