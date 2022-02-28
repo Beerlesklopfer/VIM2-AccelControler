@@ -1,3 +1,5 @@
-doc/ARCHIVE/*
-Arduino-Firmware/.pio/*
+/doc/ARCHIVE/*
+/Arduino-Firmware/.pio/*
 *.tmp
+/Zeichnungen/Autodesk Eagle/*.b#*
+/Zeichnungen/Autodesk Eagle/*.s#*
